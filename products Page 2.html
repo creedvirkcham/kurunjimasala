@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kurunji Masala | சமயலுக்கு சுவையூட்டும் ரகசியம்!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link rel="icon" href="img/Logo1.png" type="image/png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/Logo2.png" alt="Kurunji Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products Page1.html">Products</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+        <li><a href="exports.html">Exports</a></li>
+        <li><a href="Publication.html">Publication</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+<section class="hero">
+  <img src="img/Product.png" alt="Kurunji Masala" class="hero-img" />
+
+  <div class="hero-content">
+    <h1>Kurunji Masala</h1>
+    <p>இயற்கையின் நறுமணம், சுவையின் உச்சம்!</p>
+    <a href="products Page1.html" class="hero-btn">எங்கள் தயாரிப்புகள் பார்க்க</a>
+  </div>
+</section>
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <input type="text" placeholder="🔍 Search product..." class="search-box" />
+      <h2>Categories</h2>
+      <ul class="categories">
+        <li><a href="products Page1.html">Spices</a></li>
+        <li><a href="products Page 2.html">Blend spices</a></li>
+        <li><a href="#">Exports Products</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="product-list">
+      <div class="products-grid">
+  <div class="product-card" 
+     data-title="Biriyanimasala" 
+     data-description="பிரியாணி மசாலா | Adds natural color and aroma to your dishes" 
+     data-packs="20g, 50g, 100g, 200g, 500g, 1kg, 5kg" 
+     data-img="img/Biriyanimasala.png">
+  <img src="img/Biriyanimasala.png" alt="Biriyanimasala">
+  <p>Biriyanimasala</p>
+</div>
+  <div class="product-card" 
+     data-title="Muttonmasala" 
+     data-description="மட்டன் மசாலா | Adds natural color and aroma to your dishes" 
+     data-packs="20g, 50g, 100g, 200g, 500g, 1kg, 5kg" 
+     data-img="img/Muttonmasala.png">
+  <img src="img/Muttonmasala.png" alt="Muttonmasala">
+  <p>Muttonmasala</p>
+</div>
+  <div class="product-card" 
+     data-title="Chicken masala" 
+     data-description="சிக்கன் மசாலா | Adds natural color and aroma to your dishes" 
+     data-packs="20g, 50g, 100g, 200g, 500g, 1kg, 5kg" 
+     data-img="img/Chicken masala.png">
+  <img src="img/Chicken masala.png" alt="Chicken masala">
+  <p>Chicken masala</p>
+</div>
+  <div class="product-card" 
+     data-title="Chicken65masala" 
+     data-description="சிக்கன் சில்லி 65 மசாலா | Adds natural color and aroma to your dishes" 
+     data-packs="20g, 50g, 100g, 200g, 500g, 1kg, 5kg" 
+     data-img="img/Chicken65masala.png">
+  <img src="img/Chicken65masala.png" alt="Chicken65masala">
+  <p>Chicken65masala</p>
+</div>
+  <div class="product-card" 
+     data-title="currymasala" 
+     data-description="கறி மசாலா | Adds natural color and aroma to your dishes" 
+     data-packs="20g, 50g, 100g, 200g, 500g, 1kg, 5kg" 
+     data-img="img/currymasala.png">
+  <img src="img/currymasala.png" alt="currymasala">
+  <p>currymasala</p>
+</div>
+  <div class="product-card" 
+     data-title="fishcurrymasala" 
+     data-description="மீன் குழம்பு மசாலா | Adds natural color and aroma to your dishes" 
+     data-packs="20g, 50g, 100g, 200g, 500g, 1kg, 5kg" 
+     data-img="img/fishcurrymasala.png">
+  <img src="img/fishcurrymasala.png" alt="fishcurrymasala">
+  <p>fishcurrymasala</p>
+</div>
+</div>
+
+        <!-- Add more products as needed -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="products Page1.html">1</a>
+        <a class="active" href="products Page2.html">2</a>
+         <a href="products Page 3.html">3</a>
+          <a href="products Page 4.html">4</a>
+         <a href="products Page3.html">»</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- Product Slideshow Modal -->
+<div id="productModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <div class="modal-left">
+      <img id="modalImg" src="" alt="Product">
+    </div>
+    <div class="modal-right">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <h4>Available Packs:</h4>
+      <p id="modalPacks"></p>
+      <img src="img/vegen.png" alt="Vegan Logo" class="vegan-logo">
+    </div>
+  </div>
+  <div class="controls">
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Kurunji Masala</h3>
+      <p>Traditional taste, premium quality. Bringing you the essence of home-cooked flavor.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products Page1.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>CreedVirkcham Enterprise<br>Madurai, Tamil Nadu</p>
+      <p>📞 +91-9786666303<br>✉️ creedvirkcham@gmail.com</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 CreedVirkchamEnterprise | All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
+
+</body>
+</html>

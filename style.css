@@ -1433,23 +1433,3 @@ body {
 }
 
 
-/* Slider full screen in mobile */
-.slider, .slides, .slide {
-  width: 100%;
-  height: 100vh; /* full mobile height */
-  background-size: cover;
-  background-position: center;
-}
-
-/* Responsive fix */
-@media (max-width: 768px) {
-  .slider, .slides, .slide {
-    height: 100vh; /* use full screen height */
-  }
-  .slide-content {
-    padding: 20px;
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-

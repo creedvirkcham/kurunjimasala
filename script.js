@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-   <script>
+   
     const filterButtons = document.querySelectorAll('.filter button');
     const recipes = document.querySelectorAll('.recipe-feature');
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     });
-  </script>
+  
 
   function openModal(product) {
     modal.style.display = "block";
@@ -172,4 +172,5 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("show");
   });
 });
+
 

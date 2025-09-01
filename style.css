@@ -1480,7 +1480,7 @@ nav ul {
 /* Slider full width + full height */
 .slider {
   position: relative;
-  width: 100%;      /* full width in mobile & desktop */
+  width: 100vh;      /* full width in mobile & desktop */
   height: 100vh;    /* full screen height */
   overflow: hidden;
 }

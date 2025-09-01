@@ -61,151 +61,7 @@
   <div class="dots"></div>
 </section>
 
-<style>
-.slider {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
-}
-.slides {
-  display: flex;
-  transition: transform 0.8s ease;
-}
-.slide {
-  min-width: 100%;
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:white;
-}
-.slide::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-}
-.slide-content {
-  position: relative;
-  text-align: center;
-  z-index: 1;
-  max-width: 700px;
-}
-.slide-content h1 {
-  font-size: 3rem;
-}
-.slide-content span {
-  color: #ff9800;
-}
-.slide-content p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-.arrows span {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color:white;
-  cursor: pointer;
-  z-index: 2;
-  padding: 10px;
-}
-.prev { left: 15px; }
-.next { right: 15px; }
-.dots {
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-  text-align: center;
-  z-index: 2;
-}
-.dots span {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background: rgba(255,255,255,0.7);
-  border-radius: 50%;
-  cursor: pointer;
-}
-.dots .active {
-  background: #ff9800;
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".slide");
-  const slidesContainer = document.querySelector(".slides");
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
-  const dotsContainer = document.querySelector(".dots");
-
-  let index = 0;
-  let timer;
-
-  // Create dots dynamically
-  slides.forEach((_, i) => {
-    const dot = document.createElement("span");
-    dot.addEventListener("click", () => {
-      showSlide(i);
-      restartAuto();
-    });
-    dotsContainer.appendChild(dot);
-  });
-
-  function showSlide(n) {
-    index = (n + slides.length) % slides.length;
-    slidesContainer.style.transform = `translateX(${-index * 100}%)`;
-    document.querySelectorAll(".dots span").forEach((dot, i) => {
-      dot.classList.toggle("active", i === index);
-    });
-  }
-
-  function nextSlide() {
-    showSlide(index + 1);
-  }
-
-  function prevSlide() {
-    showSlide(index - 1);
-  }
-
-  function startAuto() {
-    timer = setInterval(nextSlide, 4000); // 4s interval
-  }
-
-  function stopAuto() {
-    clearInterval(timer);
-  }
-
-  function restartAuto() {
-    stopAuto();
-    startAuto();
-  }
-
-  prev.addEventListener("click", () => {
-    prevSlide();
-    restartAuto();
-  });
-
-  next.addEventListener("click", () => {
-    nextSlide();
-    restartAuto();
-  });
-
-  showSlide(index);
-  startAuto();
-});
-</script>
-
-
-
-  <!-- About Us Section -->
+<!-- About Us Section -->
 <section id="about" class="about about-flex">
   <div class="about-content">
     <h2>About Us</h2>
@@ -241,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Many high-quality studies show that turmeric has major benefits for your body and brain.
         Many of these benefits come from its main active ingredient, curcumin.
       </p>
-      <a href="Benefit Products.html" class="view-products">VIEW ALL PRODUCTS →</a>
+      <a href="products Page1.html" class="view-products">VIEW ALL PRODUCTS →</a>
     </div>
   </div>
 </section>
@@ -257,13 +113,13 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="packet-wrapper">
           <img src="img/Chennamasala.png" alt="Kurunji Chicken Masala" class="packet-img" />
         </div>
-        <h2>Chicken Masala</h2>
+        <h2>Chana Masala</h2>
         <p>
           Channa Masala is a popular Indian dish of white chickpeas in a spicy and tangy gravy.
           In North India, this dish is called ‘chole masala,’ or simply ‘chole’.
         </p>
         <div class="buttons">
-          <a href="chicken masala.html" class="btn">VIEW RECIPE →</a>
+          <a href="Chicken Pepper Fry.html" class="btn">VIEW RECIPE →</a>
           <a href="recipes.html" class="btn">VIEW ALL →</a>
         </div>
       </div>
@@ -309,28 +165,28 @@ document.addEventListener("DOMContentLoaded", function () {
   <h1 class="recipe-title">Our Products</h1>
 
   <div class="product-container">
-    <a href="product-turmeric.html" class="product-card">
+    <a href="products Page1.html" class="product-card">
       <img src="img/Turmeric Powder.png" alt="Turmeric Powder">
       <h3>Turmeric Powder</h3>
       <p>Pure and aromatic turmeric for your daily cooking.</p>
     </a>
 
-    <a href="product-chilli.html" class="product-card">
-      <img src="img/Chilli Powder.png" alt="Chilli Powder">
-      <h3>Chilli Powder</h3>
-      <p>Finely ground spicy red chilli for rich color and taste.</p>
+    <a href="products Page 4.html" class="product-card">
+      <img src="img/rasampowder.png" alt="Chilli Powder">
+      <h3>Rasam Powder</h3>
+      <p>Traditional and aromatic rasam powder for a flavorful meal.</p>
     </a>
 
-    <a href="product-coriander.html" class="product-card">
-      <img src="img/Coriender Powder.png" alt="Coriander Powder">
-      <h3>Coriander Powder</h3>
-      <p>Flavorful coriander with natural aroma and freshness.</p>
+    <a href="products Page 2.html" class="product-card">
+      <img src="img/currymasala.png" alt="Coriander Powder">
+      <h3>Curry Masala</h3>
+      <p>Rich and flavorful curry masala for perfect dishes.</p>
     </a>
 
-    <a href="product-garam.html" class="product-card">
+    <a href="products Page 3.html" class="product-card">
       <img src="img/garammasala.png" alt="Garam Masala">
       <h3>Garam Masala</h3>
-      <p>Traditional blend of Indian spices for rich dishes.</p>
+      <p>Authentic and aromatic garam masala for rich taste in every dish.</p>
     </a>
   </div>
 </section>
@@ -360,10 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="products Page1.html">Products</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="exports.html">Exports</a></li>
-          <li><a href="Publication.html">Publication</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -387,4 +240,3 @@ document.addEventListener("DOMContentLoaded", function () {
 </footer>
 </body>
 </html>
-

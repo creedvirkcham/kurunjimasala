@@ -27,6 +27,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+   <script>
+    const filterButtons = document.querySelectorAll('.filter button');
+    const recipes = document.querySelectorAll('.recipe-feature');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.textContent.trim().toLowerCase();
+
+        recipes.forEach(recipe => {
+          const type = recipe.getAttribute('data-type');
+          if (filter === 'all' || filter === type) {
+            recipe.style.display = 'flex';
+          } else {
+            recipe.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
   function openModal(product) {
     modal.style.display = "block";
     modalImg.src = product.img;
@@ -149,3 +172,4 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("show");
   });
 });
+

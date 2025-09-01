@@ -49,7 +49,7 @@
       <img src="img/Chennamasala.png" alt="Channa Masala Pack" class="masala-pack">
     </div>
     <div class="right-details">
-      <h2><img src="img/chana icon.png" class="icon"> Channa Masala</h2>
+      <h2><img src="img/vegicon.png" class="icon"> Channa Masala</h2>
       <p class="info">
         <span class="icon">🔔</span> 2 People &nbsp;&nbsp;
         <span class="icon">⏱️</span> 40 mins
@@ -65,7 +65,7 @@
       <img src="img/Chicken masala.png" alt="Masala Pack" class="masala-pack">
     </div>
     <div class="right-details">
-      <h2><img src="img/checken gravy icon.png" class="icon"> Chicken Gravy</h2>
+      <h2><img src="img/nonvegicon.png" class="icon"> Chicken Gravy</h2>
       <p class="info">
         <span class="icon">🔔</span> 4 People &nbsp;&nbsp;
         <span class="icon">⏱️</span> 45 mins
@@ -122,27 +122,6 @@
   </footer>
 
   <!-- Filtering Script -->
-  <script>
-    const filterButtons = document.querySelectorAll('.filter button');
-    const recipes = document.querySelectorAll('.recipe-feature');
-
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-
-        const filter = button.textContent.trim().toLowerCase();
-
-        recipes.forEach(recipe => {
-          const type = recipe.getAttribute('data-type');
-          if (filter === 'all' || filter === type) {
-            recipe.style.display = 'flex';
-          } else {
-            recipe.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
+ 
 </body>
 </html>
